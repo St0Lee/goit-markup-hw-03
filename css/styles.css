@@ -73,20 +73,26 @@ body {
 
 /*Header*/
 
+.header-main {
+  border-bottom: 1px solid var(--accent);
+}
+
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid var(--accent);
-  padding-top: 25.5px;
-  padding-bottom: 25.5px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .header-list {
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 .header-navigation {
   display: flex;
   gap: 76px;
+  align-items: center;
 }
 
 .header-logo {
@@ -97,6 +103,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .header-logo-studio {
@@ -153,13 +160,13 @@ body {
 .order-service-section {
   background-color: var(--dark);
   height: 600px;
+  padding: 188px 0;
 }
 
 /*Footer*/
 .footer-section {
   background-color: var(--dark);
-  padding-top: 101.5px;
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
 
 .footer-logo {
@@ -171,6 +178,8 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-logo-studio {
@@ -185,7 +194,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   max-width: 264px;
-  margin-top: 16px;
 }
 
 /*Studio*/
@@ -197,8 +205,6 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   max-width: 496px;
-  padding-top: 188px;
-  padding-bottom: 40px;
   margin: 0 auto;
 }
 
@@ -217,6 +223,7 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   display: block;
   margin: 0 auto;
+  min-width: 169px;
 }
 
 .order-service-button:hover {
@@ -236,7 +243,7 @@ body {
 }
 
 .advantages-section {
-  padding-top: 120px;
+  padding: 120px 0;
 }
 
 .advantages-list {
@@ -266,7 +273,6 @@ body {
 }
 
 .services-section {
-  padding-top: 120px;
   padding-bottom: 120px;
 }
 
@@ -277,7 +283,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .services-list {
@@ -286,7 +292,7 @@ body {
 }
 
 .services-item {
-  width: calc((100% - 2 * 24) / 3);
+  width: calc((100% - 3 * 16) / 4);
 }
 
 .services-image {
@@ -295,7 +301,7 @@ body {
 
 .team-section {
   background-color: #f4f4fd;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
 .team-list {
@@ -310,21 +316,22 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .team-item {
+  border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
-  width: calc((100% - 3 * 24) / 4);
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .team-image {
-  border-radius: 0px 0px 4px 4px;
-  background: var(--white, #fff);
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+.team-name-position {
+  padding: 32px 0;
 }
 
 .team-name {
@@ -334,7 +341,6 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  padding-top: 32px;
   text-align: center;
 }
 
@@ -344,7 +350,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-weight: 400;
-  padding-bottom: 32px;
   text-align: center;
 }
 
@@ -362,6 +367,10 @@ body {
   justify-content: center;
 }
 
+.filter-buttons-item {
+  padding: 12px 24px;
+}
+
 .filter-button {
   color: var(--primary-brand);
   font-family: "Roboto", sans-serif;
@@ -372,15 +381,18 @@ body {
   border: 1px solid var(--accent);
   background-color: var(--light);
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .filter-button:hover {
   color: var(--white-background);
   background-color: var(--pressed-state);
+  border: 1px solid transparent;
 }
 .filter-button:focus {
   color: var(--white-background);
   background-color: var(--pressed-state);
+  border: 1px solid transparent;
 }
 
 .filter-button-text {
@@ -404,9 +416,15 @@ body {
 }
 
 .portfolio-item {
-  border: 1px solid var(--accent);
   background: var(--white-background);
   width: calc((100% - 2 * 24px) / 3);
+}
+
+.portfolio-picture-apps {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
 
 img {
@@ -420,8 +438,6 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  padding: 32px 16px 0 16px;
-  margin-bottom: 8px;
 }
 
 .portfolio-picture-text {
@@ -430,5 +446,4 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-weight: 400;
-  padding: 0 16px 32px 16px;
 }
