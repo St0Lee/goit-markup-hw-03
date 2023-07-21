@@ -316,6 +316,7 @@ body {
 
 .team-item {
   background-color: #ffffff;
+  width: calc((100% - 3 * 24) / 4);
 }
 
 .team-image {
@@ -348,6 +349,18 @@ body {
 }
 
 /*Portfolio*/
+
+.filter-buttons-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.filter-buttons-list {
+  display: flex;
+  gap: 24px;
+  margin: 0 auto 72px;
+  justify-content: center;
+}
 
 .filter-button {
   color: var(--primary-brand);
@@ -384,6 +397,18 @@ body {
 
 /*portfolio-images*/
 
+.portfolio-picture-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfolio-item {
+  border: 1px solid var(--accent);
+  background: var(--white-background);
+  width: calc((100% - 2 * 24px) / 3);
+}
+
 img {
   display: block;
 }
@@ -395,6 +420,8 @@ img {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  padding: 32px 16px 0 16px;
+  margin-bottom: 8px;
 }
 
 .portfolio-picture-text {
@@ -403,4 +430,5 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-weight: 400;
+  padding: 0 16px 32px 16px;
 }
