@@ -87,6 +87,8 @@ body {
 .header-list {
   display: flex;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-navigation {
   display: flex;
@@ -117,11 +119,6 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-}
-
-.header-item {
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .header-link:hover {
