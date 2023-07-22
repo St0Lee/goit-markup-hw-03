@@ -83,12 +83,12 @@ body {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 .header-list {
   display: flex;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-navigation {
   display: flex;
